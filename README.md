@@ -5,5 +5,5 @@ This is a simple project that helps other developer to achieve something differe
 ## Convert html to pdf
 
 ```
-http://localhost:3000/converter/html2pdf?url=google.com
+http://localhost:3000/converter/html2pdf?url=http://google.com
 ```
