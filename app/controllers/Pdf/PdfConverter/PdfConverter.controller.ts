@@ -34,7 +34,6 @@ export class PdfConverterController {
           // Close the browser instance
           await browser.close();
         });
-      res.send("You can convert pdf here");
     } catch (error) {
       res.send(error.message);
     }
