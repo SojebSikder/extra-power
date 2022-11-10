@@ -14,7 +14,8 @@ export class PdfConverterController {
     const url = req.query.url.toString();
 
     const browser = await puppeteer.launch({
-      ignoreDefaultArgs: ["--no-sandbox", "--disable-setuid-sandbox"],
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+      // ignoreDefaultArgs: ["--no-sandbox", "--disable-setuid-sandbox"],
     });
     const page = await browser.newPage();
 
